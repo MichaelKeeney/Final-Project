@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<h1>This is where I will put my code block</h1>
+<h2>This is some python I did for one of my other classes</h2>
+    
+<pre><code>
+from Animal import Animal
+
+def main():
+
+    print("Welcome to Animal generator!")
+    print("This program makes animals")
+    print("")
+
+    zoo = []
+    
+    generate = True
+    while (generate):
+
+        a_type = input("What type of animal would you like to create?: ")
+        name = input(f"What is the {a_type}’s name?: ")
+        mood = input(f"How is {name} feeling: ")
+
+        animal1 = Animal(a_type, name, mood)
+        
+        print("")
+        zoo.append(f"{animal1.get_name()} the {animal1.get_animal_type()} is {animal1.get_mood()}")
+        print("")
+        
+        another_animal = input("Would you like to add more animals (y/n)? ")
+        print("")
+
+        if another_animal != "y":
+            print("Animals in zoo:")
+            for animal in zoo:
+                print(animal)
+            generate = False
+
+
+        
+
+main()
+</code></pre>
+    
+<p>Here are the other pages:</p>
+<ul><li><a href="Main.html">Main</a> </li>
+    <li> <a href="Messingaround.html">Messing around</a></li>
+    <li><a href="Image.html">Image</a></li>
+    <li> <a href="AnotherImage.html">Another Image</a></li>
+    <li> <a href="Somecode.html">Some code</a></li>
+    <li><a href="Anotherpage.html">Another page</a> </li></ul>
+    
+</body>
+</html>
